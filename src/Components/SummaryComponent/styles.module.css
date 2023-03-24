@@ -1,0 +1,50 @@
+@import url('../../colors.css');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(230deg, var(--dark-blue), var(--very-dark-blue));
+}
+
+.container .result{
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--dark-blue);
+}
+
+.container .result .result-text{
+    margin-top: 4px;
+    color : var(--orange)
+}
+
+.container .title{
+    margin-top: 2rem;
+    color : var(--white);
+    font-weight: 700;
+}
+
+.container .text{
+    margin-top: 1rem;
+    color : var(--medium-gray);
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 330px ;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

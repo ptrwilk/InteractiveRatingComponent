@@ -1,0 +1,83 @@
+@import url('../../colors.css');
+
+.container{
+    width: 400px;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(230deg, var(--dark-blue), var(--very-dark-blue));
+}
+
+.container .circle-selected,
+.container .circle{
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-blue);
+}
+
+.container .circle-selected{
+    background-color: var(--orange);
+}
+
+.container .title{
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+.container .text{
+    margin-top: 1rem;
+    color: var(--medium-gray);
+}
+
+.container .numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 1rem;
+}
+
+.container .numbers .number-text-selected,
+.container .numbers .number-text{
+    margin-top: 5px;
+    color: var(--medium-gray);
+}
+
+.container .numbers .number-text-selected{
+    color: var(--white);
+}
+
+.container .numbers .circle:not(.circle-selected):hover{
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+.container .numbers .circle:hover .number-text{
+    color: var(--white);
+}
+
+.container .numbers .circle:not(.circle-selected):active{
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+.container .btn{
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.container .btn:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 330px ;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
